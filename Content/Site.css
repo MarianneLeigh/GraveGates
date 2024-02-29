@@ -103,3 +103,15 @@ input.form-control {
 .text-xs {
     font-size: 12px;
 }
+
+.font-bold {
+    font-weight: bold;
+}
+
+.gg-card {
+    background-color: rgb(var(--color));
+    color: #dfdfdf;
+    padding: 16px 20px;
+    border-radius: 12px;
+    
+}
