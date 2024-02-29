@@ -15,6 +15,9 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/gg_icon.png" rel="shortcut icon" type="image/png" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <form runat="server">
@@ -37,12 +40,12 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-gg-primary">
+        <nav class="gg-navbar navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-gg-primary">
             <div class="container d-flex justify-content-between">
-                <div class="d-flex align-items-center gap-3">
-                    <img src="gg_icon.png" width="32" alt="Icon" />
-                    <a class="navbar-brand" runat="server" href="~/Home">GraveGates</a>
-                </div>
+                <a class="navbar-brand d-flex align-items-center gap-2" runat="server" href="~/Home">
+                    <img src="gg_icon.png" width="28" alt="Icon" />
+                    <span>GraveGates</span>
+                </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
