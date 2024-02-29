@@ -13,7 +13,7 @@
     </asp:PlaceHolder>
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/gg_icon.png" rel="shortcut icon" type="image/png" />
 
 </head>
 <body>
@@ -39,7 +39,10 @@
 
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-gg-primary">
             <div class="container d-flex justify-content-between">
-                <a class="navbar-brand" runat="server" href="~/">GraveGates</a>
+                <div class="d-flex align-items-center gap-3">
+                    <img src="gg_icon.png" width="32" alt="Icon" />
+                    <a class="navbar-brand" runat="server" href="~/Home">GraveGates</a>
+                </div>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
