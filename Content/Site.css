@@ -23,6 +23,7 @@
     --color-light: 217, 217, 217;
     --bs-body-font-family: "Poppins";
     --bs-body-font-size: 14px;
+    --bs-body-bg: #faebeb;
     letter-spacing: 0.1px;
 }
 
