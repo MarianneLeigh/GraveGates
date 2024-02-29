@@ -11,7 +11,7 @@ namespace GraveGates
 {
 
 
-    public partial class Contact
+    public partial class WebForm1
     {
     }
 }

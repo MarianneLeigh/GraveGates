@@ -1,4 +1,9 @@
-﻿/* Wrapping element */
+﻿:root {
+    --color: 124, 32, 32;
+    --color-light: 217, 217, 217;
+}
+
+/* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
     margin-top: 15px;
@@ -18,4 +23,22 @@ textarea {
     .body-content {
         padding: 0;
     }
+}
+
+.bg-gg-primary {
+    background-color: rgb(var(--color));
+}
+
+.text-gg-primary {
+    color: rgb(var(--color));
+}
+
+.gg-nav {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    border-radius: 10px;
+}
+
+.gg-nav:hover {
+    background-color: rgba(var(--color-light), 0.25);
 }
