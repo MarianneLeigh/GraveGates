@@ -1,10 +1,41 @@
-﻿/* Wrapping element */
+﻿
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --color: 124, 32, 32;
+    --color-light: 217, 217, 217;
+    --bs-body-font-family: "Poppins";
+    --bs-body-font-size: 14px;
+    --bs-body-bg: #faebeb;
+    letter-spacing: 0.1px;
+}
+
+/* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
     margin-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
+    font-family: "Poppins";
 }
+
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
 input,
@@ -18,4 +49,69 @@ textarea {
     .body-content {
         padding: 0;
     }
+
+    .w-md-100 {
+        width: 100%;
+    }
+}
+
+.bg-gg-primary {
+    background-color: rgb(var(--color));
+    color: #dfdfdf;
+}
+
+.btn-gg-primary {
+    background-color: rgb(var(--color));
+    color: #dfdfdf;
+}
+
+.btn-gg-primary:hover, .btn-gg-primary:active {
+    background-color: rgba(var(--color), 0.9) !important;
+    color: #dfdfdf;
+}
+
+.text-gg-primary {
+    color: rgb(var(--color));
+}
+
+.gg-nav {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    border-radius: 10px;
+}
+
+.gg-nav:hover {
+    background-color: rgba(var(--color-light), 0.25);
+}
+
+.h-screen {
+    height: calc(100dvh - 400px);
+}
+
+.login-page {
+    height: 500px;
+}
+
+input.form-control {
+    font-family: sans-serif;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-xs {
+    font-size: 12px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.gg-card {
+    background-color: rgb(var(--color));
+    color: #dfdfdf;
+    padding: 16px 20px;
+    border-radius: 12px;
+    
 }
