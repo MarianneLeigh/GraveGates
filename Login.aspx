@@ -7,19 +7,17 @@
             <p>Your premier destination for locating specific private cemeteries</p>
         </div>
         <div class="col">
-            <form class="needs-validation" novalidate>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
-                </div>
-                <div class="mb-3">
-                  <label for="password" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="password" required />
-                </div>
-                <a class="text-xs" href="Signup.aspx">Don't have an account? Create one</a>
-                <br />
-                <button class="btn btn-primary mt-3 text-xs" type="submit">Login</button>
-            </form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <asp:TextBox runat="server" type="email" class="form-control" ID="email" placeholder="name@example.com" required></asp:TextBox>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <asp:TextBox runat="server" type="password" class="form-control" ID="password" required></asp:TextBox>
+            </div>
+            <a class="text-xs" href="Signup.aspx">Don't have an account? Create one</a>
+            <br />
+            <asp:Button runat="server" ID="btnLogin" Text="Login" CssClass="btn btn-primary mt-3 text-xs" OnClick="OnLogin" />
         </div>
     </main>
 </asp:Content>
