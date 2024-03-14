@@ -31,7 +31,7 @@
                 </div>
                     
                 <div>
-                    <button class="btn btn-primary mt-3 text-xs w-100" type="submit" style="margin-left:2px; margin-bottom:20px; padding-left:10em; padding-right:10em;">Create Account</button>
+                    <asp:Button UseSubmitBehavior="False" runat="server" ID="SignUpBtn" CssClass="btn btn-primary mt-3 text-xs w-100" type="submit" style="margin-left:2px; margin-bottom:20px; padding-left:10em; padding-right:10em;" OnClick="OnRegister" Text="Create Account" CausesValidation="False" />
                 </div>
                 <div class="d-flex justify-content-center">
                     <a class="text-xs" href="Signup.aspx">Don't have an account? Create one</a>
