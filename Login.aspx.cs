@@ -11,7 +11,15 @@ namespace GraveGates
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
+
+        protected void OnLogin(object sender, EventArgs e)
+        {
+            if (IsValid)
+            {
+                Response.Redirect("~/Home.aspx");
+            }
+        }   
     }
 }
