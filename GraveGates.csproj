@@ -101,6 +101,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Assets\abt_img.png" />
+    <Content Include="Assets\Background.png" />
     <Content Include="Login.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />

@@ -60,16 +60,9 @@
             </div>
         </nav>
 
-        <div class="container body-content">
-            <div class="py-5">
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
                 </asp:ContentPlaceHolder>
-            </div>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - GraveGates</p>
-            </footer>
-        </div>
+           
     </form>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
