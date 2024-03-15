@@ -53,6 +53,7 @@
                 <div class="collapse d-sm-inline-flex justify-content-end">
                     <ul class="navbar-nav flex-grow-1 gap-2">
                         <li class="nav-item"><a class="nav-link gg-nav" runat="server" href="~/Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link gg-nav" runat="server" href="~/Find">Find</a></li>
                         <li class="nav-item"><a class="nav-link gg-nav" runat="server" href="~/About">About Us</a></li>
                         <li class="nav-item"><a class="nav-link gg-nav" runat="server" href="~/Login">Login</a></li>
                     </ul>
