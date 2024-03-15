@@ -10,22 +10,23 @@
                 <div style="margin-bottom:30px;">
                     <div class="mb-3">
                       <label for="email" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+                      <asp:TextBox runat="server" ID="emailInput" type="email" class="form-control" placeholder="name@example.com" required />
                     </div>
                     <div class="mb-3">
                       <label for="password" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="password" required />
+                      <asp:TextBox runat="server" ID="passwordInput" type="password" class="form-control" required />
                     </div>
                 </div>
+
+                <div runat="server" ID="message"></div>
                     
                 <div style="position:center; text-align:center;">
-                    <button class="btn btn-primary mt-3 text-xs" type="submit" style="margin-bottom:20px; padding-left:5em; padding-right:5em; position:center;">Login</button>
+                    <asp:Button runat="server" OnClick="OnLogin" class="btn btn-primary mt-3 text-xs" type="submit" style="margin-bottom:20px; padding-left:5em; padding-right:5em; position:center;" Text="Login" />
                 </div>
                 <div style="text-align:center;">
                     <a class="text-xs" href="Signup.aspx">Don't have an account? Create one</a>
                 </div>
                 <br />
-                
             </div>
 
         </div>
