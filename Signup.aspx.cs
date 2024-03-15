@@ -8,6 +8,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using BC = BCrypt.Net.BCrypt;
+
 // Create SQL Connection with GraveGates Database and create onregister code
 namespace GraveGates
 {
@@ -65,7 +67,7 @@ namespace GraveGates
                         command.Parameters.AddWithValue("@FirstName", firstname);
                         command.Parameters.AddWithValue("@LastName", lastname);
                         command.Parameters.AddWithValue("@Email", email);
-                        command.Parameters.AddWithValue("@Password", pass);
+                        command.Parameters.AddWithValue("@Password", BC.HashPassword(pass));
                         command.ExecuteNonQuery();
                     }
                 }

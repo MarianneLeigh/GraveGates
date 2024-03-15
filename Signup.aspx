@@ -30,9 +30,7 @@
                     </div>
                 </div>
                    
-                <div runat="server" ID="message">
-
-                </div>
+                <div runat="server" ID="message"></div>
                     
                 <div>
                     <asp:Button UseSubmitBehavior="False" runat="server" ID="SignUpBtn" CssClass="full btn btn-primary mt-3 text-xs w-100" type="submit" style="margin-left:2px; margin-bottom:20px; padding-left:10em; padding-right:10em;" OnClick="OnRegister" Text="Create Account" CausesValidation="False" />
