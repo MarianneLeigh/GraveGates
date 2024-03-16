@@ -1,14 +1,18 @@
 ﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="GraveGates._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <main class="d-flex flex-column align-items-center pt-4">
-       <h3 class="font-bold text-gg-primary">GraveGates</h3>
-       <p class="text-center w-75">
-           Welcome to GraveGates, your premier destination for locating specific private cemeteries.
-           We understand the importance of honoring the memory of your loved ones in a serene and private setting.
-       </p>
-        <button class="btn btn-primary">Find cemetery</button>
-        <p class="mt-3">or</p>
-        <a href="Login.aspx">Login</a>
-    </main>
+    <main class="d-flex justify-content-center align-items-center" style="background-image: url('Assets/Background.png'); background-size: cover; height: calc(100vh - 72px);" aria-labelledby="title">
+    
+    <div class="ps-5 ms-5">
+        <h1 class="font-medium text-white">GraveGates</h1>
+        <p class="text-white w-50">
+            Welcome to GraveGates, your premier destination for locating specific private cemeteries.
+            We understand the importance of honoring the memory of your loved ones in a serene and private setting.
+        </p>
+        <a class="btn btn-primary" href="Find.aspx">Find cemetery</a>
+    </div>
+    
+</main>
+
 </asp:Content>
+
